@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "./Home";
 import Insert from "./Insert";
 import Display from "./Display";
+import AddMoreBook from "./AddMoreBook";
 
 const App=()=>{
   return(
@@ -14,6 +15,7 @@ const App=()=>{
             <Route path="home" element={<Home/>} />
             <Route path="insert" element={<Insert/>} />
             <Route path="display" element={<Display/>}/>
+            <Route path="addmore/:id" element={<AddMoreBook/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
